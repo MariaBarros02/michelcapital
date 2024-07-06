@@ -1,7 +1,7 @@
 :root{
-    --colorPrimario: #000000;
-    --colorPrimarioII: #ffffff;
-    --colorSecundario: #fae7c6;
+    --colorPrimario: #fae7c6;
+    --colorPrimarioII: #000000;
+    --colorSecundario: #ffffff;
     --colorSecundarioII: #103815;
 
     --fuentePrincipal: "Montserrat",arial;
@@ -25,6 +25,7 @@ body{
 }
 a{
     text-decoration: none;
+
 }
 img{
     width: 100%;
@@ -58,7 +59,7 @@ img{
     color: var(--colorPrimarioII);
 }
 .btn-primario:hover{
-    background-color: #444444;
+    background-color: #fae7c6;
 }
 .btn-primarioII{
     background-color: var(--colorPrimarioII);
@@ -85,8 +86,9 @@ img{
 /**Navegacion**/
 
 .navegacion {
-    background-color: var(--colorPrimario);
-    color: var(--colorPrimarioII);
+    background-color: var(--colorPrimarioII);
+    
+
 }
 
 .navegacion__logo{
@@ -103,25 +105,37 @@ img{
 }
 
 .barraNavegacion a{
+    color: var(--colorSecundario);
     padding: 2rem;
-    color: var(--colorPrimarioII);
     font-size: 1.5rem;
     display: block;
+    text-decoration: none;
+
     text-align: center;
+}
+.navegacion__logo--img{
+    width: 3.9rem;
+    text-decoration: none;
+
 }
 .menu{
     display: none;
 }
 .menu.active{
     display: block;
+    
 }
 #btn-menu{
     color: white;
     font-size: 3rem;
+    text-decoration: none;
+
 }
 
 .barraNavegacion a:hover{
-    background-color: rgb(85, 85, 85);
+    background-color: #f5d59f;
+    text-decoration: none;
+
 }
 
 @media (min-width: 968px) {
@@ -166,47 +180,47 @@ img{
     padding: 2rem;
 }
 .hero__contenido--texto{
-    width: 80%;
     margin: auto;
+    width: 60%;
+    text-align: center;
 }
 .hero__contenido--texto h1{
-    font-weight: 700;
-    color: var(--colorPrimarioII);
+    font-weight: 400;
+    color: var(--colorPrimario);
     font-size: 2.2rem;
     text-transform: uppercase;
+    display: none;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
 }
 
 .hero__contenido--logo{
     margin:auto;
     padding-top: 4rem;
-    width: 30rem;
+    width: 15rem;
 
 }
 
-@media (min-width: 968px) {
-    .hero{
-        height: 40rem;
-    }
-    .hero__contenido{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        place-content: center;
-    }
-    .hero__contenido--texto{
 
-        text-align: left;
-    }
+@media (min-width: 480px) {
     .hero__contenido--texto h1{
-        font-size: 3.2rem;
+        display: block;
     }
-    .hero__contenido--texto p{
-        font-size: 1.4rem;
+  
+    .hero__contenido--texto h1{
+        font-size: 2rem;
     }
     .hero__contenido--logo{
         width: 30rem;
     }
 }
-
+@media (min-width: 480px) {
+    
+    .hero__contenido--texto h1{
+        font-size: 2.5rem;
+    }
+    
+}
 /*HERO GENERAL*/
 
 .heroGeneral{
