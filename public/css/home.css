@@ -1,13 +1,125 @@
-.seccionCarrousel {
-    width: 85%;
-    margin: 4rem auto;
+/* Slideshow container */
+.contenedor-imagenes {
+    position: relative;
+    margin: auto;
+}
 
+/* Hide the images by default */
+.misImagenes {
+    display: none;
 
 }
 
-.seccionCarrousel__titulo {
-    font-size: 3rem;
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
     font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.activo,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.transicion {
+    animation-name: transicion;
+    animation-duration: 1.5s;
+}
+
+@keyframes transicion {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+.seccionCarrousel {
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+
+
+}
+.seccionCarrousel2{
+    background-color: var(--colorPrimario);
+    padding: 3rem 0;
+    
+}
+.seccionCarrousel2__contenido{
+    width: 90%;
+    margin: auto;
+}
+
+.seccionCarrousel__titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}
+
+.texto-xl {
+    font-size: 3rem;
 }
 
 .seccionCarrousel__parrafo {
@@ -16,20 +128,150 @@
 }
 
 .seccionCarrousel__texto {
-    padding: 1rem 0;
+    padding: 3rem 0;
 
 }
 
-@media (min-width: 920px) {
+.esconder-sm {
+    display: none;
+}
 
+.seccionCarrousel__link {
+    padding: 1rem;
+    color: var(--colorPrimarioII);
+    background-color: var(--colorPrimario);
+    border: #000 solid 1px;
+    border-radius: 1rem;
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem;
+    font-weight: bold;
+}
+
+.seccionCarrousel__link:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: var(--colorPrimarioII);
+}
+
+
+@media (min-width: 768px) {
     .seccionCarrousel__titulo {
         font-size: 3rem;
-        font-weight: bold;
+    }
+
+    .texto-xl {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 920px) {
+    .esconder-grid {
+        display: none;
+    }
+
+    .esconder-sm {
+        display: block;
+    }
+
+    .seccionCarrousel__titulo {
+        font-size: 4rem;
+        text-align: left;
+    }
+    
+    .texto-xl {
+        font-size: 4.5rem;
+    }
+    .seccionCarrousel2{
+        padding-bottom: 10rem;
     }
 
     .seccionCarrousel__texto {
+        width: 90%;
+        margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: center;
         gap: 10rem;
+    }
+
+    .seccionCarrousel__link {
+        width: 20rem;
+        float: right;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+.seccionChoose {
+    background-color: #f1f1f1;
+    padding: 5rem 0;
+}
+
+.seccionChoose__contenido {
+    width: 85%;
+    margin: auto;
+}
+
+.seccionChoose__titulo {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.seccionChoose__parrafo {
+    font-size: 1.4rem;
+}
+
+.seccionChoose__img {
+    border: #FFF solid 3px;
+    z-index: 1;
+    position: relative;
+
+}
+
+.seccionChoose__texto {
+    background-color: var(--colorSecundario);
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+
+}
+
+
+@media (min-width: 920px) {
+
+    .seccionChoose__contenido {
+        width: 70%;
+        margin: auto;
+    }
+
+
+    .seccionChoose__parrafo {
+        padding-left: 1.5rem;
+    }
+
+    .seccionChoose__img {
+        width: 60%;
+
+    }
+
+    .seccionChoose__texto {
+        width: 60%;
+        margin-left: 45rem;
+        margin-top: -18rem;
+        text-align: left;
+
+
     }
 }
