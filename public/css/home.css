@@ -1,0 +1,35 @@
+.seccionCarrousel {
+    width: 85%;
+    margin: 4rem auto;
+
+
+}
+
+.seccionCarrousel__titulo {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.seccionCarrousel__parrafo {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.seccionCarrousel__texto {
+    padding: 1rem 0;
+
+}
+
+@media (min-width: 920px) {
+
+    .seccionCarrousel__titulo {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .seccionCarrousel__texto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+    }
+}

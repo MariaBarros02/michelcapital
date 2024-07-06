@@ -21,7 +21,7 @@ html {
 body{
     margin:0;
     font-family: var(--fuentePrincipal);
-    color: var(--colorPrimario);
+    color: var(--colorPrimarioII);
 }
 a{
     text-decoration: none;
@@ -77,10 +77,7 @@ img{
     background-color: var(--colorPrimario);
     color: var(--colorPrimarioII);
 }
-.texto-azul{
-    color: var(--colorSecundario);
-}
-.texto-rojo{
+.texto-verde{
     color: var(--colorSecundarioII);
 }
 /**Navegacion**/
