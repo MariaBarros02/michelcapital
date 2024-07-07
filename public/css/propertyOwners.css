@@ -60,6 +60,7 @@
     font-size: 3rem;
     padding: 3rem;
     color: #FFF;
+    text-align: center;
     font-weight: bolder;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
@@ -68,6 +69,8 @@
 @media (min-width: 768px) {
     .propertyOwners__titulo{
         font-size: 5rem;
+        text-align: left;
+
     }
 
 }
