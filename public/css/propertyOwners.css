@@ -1,0 +1,73 @@
+.propertyOwners__titulo{
+    background-color: var(--colorPrimario);
+    font-size: 3rem;
+    padding: 3rem;
+    color: #FFF;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .propertyOwners__titulo{
+        font-size: 5rem;
+    }
+
+}
+
+.seccionIntroduccion{
+    width: 80%;
+    
+    margin: 4rem auto;
+}
+
+.seccionIntroduccion__img{
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.seccionIntroduccion__texto{
+    text-align: center;
+}
+.seccionIntroduccion__subtitulo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.seccionIntroduccion__parrafo{
+    font-size: 1.5rem;
+}
+
+
+
+@media (min-width: 920px) {
+    .seccionIntroduccion{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+    .seccionIntroduccion__subtitulo{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+
+
+
+.seccionPartner__titulo{
+    background-color: var(--colorPrimarioII);
+    font-size: 3rem;
+    padding: 3rem;
+    color: #FFF;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    padding: 4rem 6rem;
+}
+@media (min-width: 768px) {
+    .propertyOwners__titulo{
+        font-size: 5rem;
+    }
+
+}
