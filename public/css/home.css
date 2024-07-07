@@ -97,16 +97,18 @@
 .seccionCarrousel {
     width: 90%;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 2rem;
 
 
 }
-.seccionCarrousel2{
+
+.seccionCarrousel2 {
     background-color: var(--colorPrimario);
     padding: 3rem 0;
-    
+
 }
-.seccionCarrousel2__contenido{
+
+.seccionCarrousel2__contenido {
     width: 90%;
     margin: auto;
 }
@@ -179,11 +181,12 @@
         font-size: 4rem;
         text-align: left;
     }
-    
+
     .texto-xl {
         font-size: 4.5rem;
     }
-    .seccionCarrousel2{
+
+    .seccionCarrousel2 {
         padding-bottom: 10rem;
     }
 
@@ -213,7 +216,7 @@
 
 
 .seccionChoose {
-    background-color: #f1f1f1;
+    background-color: #e7e7e7;
     padding: 5rem 0;
 }
 
@@ -273,5 +276,92 @@
         text-align: left;
 
 
+    }
+}
+
+.seccionBeneficios {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.seccionBeneficios__titulo {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.seccionBeneficios__texto {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.seccionBeneficios__subtitulo {
+    font-size: 2rem;
+}
+
+.seccionBeneficios__parrafo {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 920px) {
+    .seccionBeneficios__contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+
+    .seccionBeneficios__titulo {
+        text-align: left;
+    }
+
+    .seccionBeneficios__parrafo {
+        padding: 1rem;
+    }
+}
+
+
+
+
+.seccionContacto{
+    background-image: url("../img/image_6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+.seccionContacto__contenido{
+    width: 100%;
+    height: 100%;
+    background-color: #353535bd;
+    padding: 3rem;
+}
+.seccionContacto__texto{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 4rem;
+}
+.seccionContacto__link{
+    margin: 2rem auto;
+    padding: 1rem;
+    border: #FFF solid 1px;
+    border-radius: 1rem;
+    display: block;
+    width: 30rem;
+    text-align: center;
+    color: #FFF;
+    font-size: 2rem;
+}
+.seccionContacto__link:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+@media (min-width: 768px){
+    .seccionContacto__texto{
+        font-size: 3rem;
     }
 }

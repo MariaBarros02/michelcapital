@@ -3,6 +3,7 @@
     --colorPrimarioII: #000000;
     --colorSecundario: #ffffff;
     --colorSecundarioII: #103815;
+    --colorSecundarioIII: #c0a23e;
 
     --fuentePrincipal: "Montserrat",arial;
     
@@ -26,6 +27,9 @@ body{
 a{
     text-decoration: none;
 
+}
+a:hover{
+    text-decoration: none;
 }
 img{
     width: 100%;
@@ -80,6 +84,9 @@ img{
 .texto-verde{
     color: var(--colorSecundarioII);
 }
+.texto-amarillo{
+    color: var(--colorSecundarioIII);
+}
 /**Navegacion**/
 
 .navegacion {
@@ -102,8 +109,8 @@ img{
 }
 
 .barraNavegacion a{
-    color: var(--colorSecundario);
-    padding: 2rem;
+    color: var(--colorPrimario);
+    padding: 3rem;
     font-size: 1.5rem;
     display: block;
     text-decoration: none;
@@ -130,8 +137,9 @@ img{
 }
 
 .barraNavegacion a:hover{
-    background-color: #f5d59f;
+    background-color: var(--colorPrimario);
     text-decoration: none;
+    color: var(--colorPrimarioII);
 
 }
 
@@ -266,8 +274,8 @@ img{
 /*Footer*/
 
 .footer{
-    background-color: var(--colorPrimario);
-    color: var(--colorPrimarioII);
+    background-color: var(--colorPrimarioII);
+    color: var(--colorPrimario);
     text-align: center;
     font-size: 1.4rem;
     padding:2rem 6rem;
