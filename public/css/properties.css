@@ -20,22 +20,28 @@
     margin: 4rem auto;
 }
 .seccionPropiedades div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem 1rem;
     margin-bottom: 3rem ;
-    height:100%
+   
 }
 .seccionPropiedades__titulo{
     color: var(--colorPrimarioII);
     font-size: 2rem;
     font-weight: bold;
     padding: 0 1rem;
+    
 }
-.seccionPropiedades__descripcion{
+.seccionPropiedades__ubicacion{
+    width: 100%;
     padding:  0 1rem;
     font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.seccionPropiedades__descripcion{
+    width: 100%;
+    padding:  0 1rem;
+    font-size: 1.3rem;
     
 }
 .seccionPropiedades__contenedor{
@@ -47,21 +53,14 @@
     display: block;
     width: 90%;
     font-size: 1.2rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     text-align: center;
     color: var(--colorPrimarioII);
     font-weight: bold;
 }
 .btn-propiedad:hover{
     background-color: var(--colorPrimarioII);
-    border: none;
-    display: block;
-    width: 90%;
-    font-size: 1.2rem;
-    margin: 2rem auto;
-    text-align: center;
     color: var(--colorSecundario);
-    font-weight: bold;
 }
 
 

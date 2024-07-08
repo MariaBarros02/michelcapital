@@ -12,6 +12,7 @@
 @media (min-width: 768px) {
     .propertyOwners__titulo{
         font-size: 5rem;
+        
     }
 
 }
@@ -65,12 +66,53 @@
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     padding: 4rem 6rem;
+    margin: 0;
+   
+}
+.seccionPartner__contenedor{
+    background-image:url("../img/image_9.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+.seccionPartner__contenido{
+    background-color: #2c2c2cd3;
+    padding:3rem;
+    width: 100%;
+}
+.seccionVentajas__texto{
+    background-color: #000000b4;
+    color: var(--colorSecundario);
+    margin: 3rem auto;
+    padding: 1rem ;
+    
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    
+}
+.seccionVentajas__logo img{
+    border-radius: .5rem;
 }
 @media (min-width: 768px) {
-    .propertyOwners__titulo{
+    .propertyPartner__titulo{
         font-size: 5rem;
         text-align: left;
 
     }
 
+}
+@media (min-width: 920px) {
+    .seccionVentajas-2col, .seccionVentajas-col{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4rem;
+
+    
+    }
+    .seccionVentajas__logo{
+        width: 70%;
+        margin: auto;
+    }
 }
