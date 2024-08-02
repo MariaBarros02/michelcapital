@@ -26,7 +26,7 @@
 }
 .seccionPropiedades__titulo{
     color: var(--colorPrimarioII);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     padding: 0 1rem;
     
@@ -68,7 +68,7 @@
     .seccionPropiedades{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+        gap: 2rem;
     }
 }
 
@@ -76,7 +76,7 @@
     .seccionPropiedades{
        
         grid-template-columns: repeat(4, 1fr);
-        gap: 3rem;
+        gap: 1rem;
         place-content: center;
     }
 
